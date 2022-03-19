@@ -1,0 +1,118 @@
+.box {
+    position: absolute;
+    width: 100%;
+}
+
+.box-lbox {
+    height: 560px;
+    width: 230px;
+    background-color: rgb(229, 229, 229);
+    position: absolute;
+    left: 40px;
+    top: -40px;
+}
+
+.lbox-title {
+    height: 88px;
+    background-color: #008f40;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 88px;
+}
+
+.lbox-content {
+    padding: 20px 0;
+}
+
+.c-item {
+    height: 44px;
+    background: #f8f8f8;
+    margin: 0 0 20px 20px;
+    text-align: left;
+    font-size: 18px;
+    border-left: 2px double #008f40;
+}
+
+.c-item_son {
+    height: 44px;
+    background: rgb(229, 229, 229);
+    margin: 0 0 20px 20px;
+    text-align: left;
+    font-size: 18px;
+
+}
+
+.box-hbg {
+    width: 100%;
+    height: 48px;
+    background-color: #e5e5e5;
+    position: relative;
+
+}
+
+.box-header {
+    height: 48px;
+    width: 1380px;
+    float: right;
+    margin-top: 10px;
+}
+
+.h-left {
+    float: left;
+    font-size: 20px;
+    color: #008f40;
+    margin-top: -1px;
+}
+
+.h-right {
+    float: right;
+    margin-right: 180px;
+}
+
+.b-content {
+    width: 80%;
+    float: right;
+    text-align: center;
+}
+
+.b-content_text {
+    width: 80%;
+    margin-top: 100px;
+}
+
+.test {
+    display: flex;
+}
+
+.box_do {
+    background-color: rgb(229, 229, 229);
+    width: 288px;
+    height: 480px;
+}
+
+.text_car {
+    position: absolute;
+    bottom: 55%;
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    margin-left: 30px;
+    width: 300px;
+    font-size: 20px;
+    border-left: 2px double rgb(0, 143, 64);
+}
+
+.box_d {
+    width: 200px;
+    border: 1px solid red;
+    float: right;
+
+
+}
+
+.b-content_text_size {
+    text-align: center;
+    margin-right: 300px;
+    padding: auto;
+
+}

@@ -1,0 +1,36 @@
+#carouselExampleControls {
+
+    width: 360px;
+    height: 320px;
+}
+
+.logimg {
+    width: 40px;
+}
+
+/* 媒体查询 */
+@media (min-width: 768px) {
+    .news-input {
+        width: 70%;
+    }
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 56px;
+}
+
+#logee {
+    text-align: center;
+}
+
+.ps {
+    /* background: url(1_weixin_44484452.jpg) no-repeat; */
+    /* border-radius: 50%; */
+    transition: transform 2s ease-out;
+}
+
+.ps:hover {
+    transform: rotateZ(360deg);
+}

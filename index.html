@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ZN-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>广西科技师范学院宣传页</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="javascript" href="./js/index1.js">
+    <link href="https://cdn.bootcdn.net/ajax/libs/Buttons/2.0.0/css/buttons.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script> -->
+
+    <!-- 项目寄语 -->
+    <!-- 本来想用上的vue.js 单纯的静态页面没有必要 -->
+</head>
+
+<body>
+
+    <audio style="position:fixed; bottom:0; left:0;" preload="auto" autoplay="autoplay" src="./video/love.mp3"
+        id="vd"></audio>
+
+    <!-- 说明：
+1、使用autoplay="autoplay"，则背景音乐将在音网页打开后就自动马上播放。
+
+2、使用controls="controls"，则为了在页面内显示显示控件，如播放按钮。
+
+3、使用"loop="loop"，则是为了是背景音乐重复播放。
+
+4、使用preload="auto"，则音频在页面加载的同时进行加载，并预备播放。
+
+5、使用src=""，即是在""内加入背景音乐的保存路径，如：src=""。 -->
+
+    <section class="showcase">
+        <div class="video-container">
+            <video src="./video/video.mp4" autoplay muted loop></video>
+        </div>
+        <div class="content">
+
+            <h1>广西科技师范学院</h1>
+            <h3 style="color: RGB(255,164,33);"> Welcome to </h3>
+            <h2 style="color: RGB(255,164,33);"> Guangxi Science & Technology Normal University</h2>
+            <a href="#about" class="btn">查看更多</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <a href="./default.html" target="_blank"
+            class="button button-glow button-border button-rounded button-primary">进入官网</a>
+
+        <a href="#" class="button button-glow button-border button-rounded button-primary"><i></i>返回顶部</a>
+        <h2>Linson开源作品</h2>
+        <h2> <a href="https://gitee.com/S88888888" target="_blank">开源项目地址:https://gitee.com/s88888888 </a> </h2>
+        <h2>html5+css3+bootstrap5.1+UI库</h2>
+        <div class="social">
+
+            <!-- Linson在此引用http://www.fontawesome.com.cn/faicons/ 动态图标库 -->
+            <!-- <link href="https://cdn.bootcdn.net/ajax/libs/Buttons/2.0.0/css/buttons.css" rel="stylesheet"> -->
+            <!-- <a href="#"><i class="fa fa-weibo"></i>微博</a> -->
+
+            <a href="#"><i class="fa fa-backward"></i>返回顶部</a>
+            <a href="JavaScript:void(0)"><i class="fa fa-weixin"></i> 微信公众号</a>
+            <a href="JavaScript:void(0)"><i class="fa fa-qq"></i> 招生QQ群</a>
+            <a href="https://gitee.com/s88888888"><i class="fa fa-github"></i> Gitee</a>
+
+
+            <button class="button button-3d button-action button-circle button-jumbo" :src="src1"><i
+                    class="fa fa-thumbs-up" :src="src1"></i>+1</button>
+
+
+        </div>
+    </section>
+
+    <script>
+        window.onload = function () {
+            setInterval("toggleSound()", 100);
+        }
+
+        function toggleSound() {
+            var music = document.getElementById("vd"); //获取ID  
+
+
+
+            if (music.paused) { //判读是否播放  
+                music.paused = false;
+                music.play(); //没有就播放 
+            }
+
+        }
+        console.log('不要偷看我控制台你把持不住' + "%c+",
+            `font-size: 1px;
+  padding: 122px 217px;
+  background-image: url(https://qn.doutub.com/16244483759822.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;`);
+    </script>
+</body>
+
+</html>
